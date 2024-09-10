@@ -2,11 +2,13 @@ import React from "react";
 import ProjectsHeader from "./Components/ProjectsHeader";
 import ProjectsSubHeader from "./Components/ProjectsSubHeader";
 import AllProjectsSection from "./Components/AllProjectsSection";
+import StatsRightSideBar from "./Components/StatsRightSideBar";
 
 const AllProjects = () => {
   return (
     <div className="bg-slate-50 w-full min-h-screen flex">
       <AllProjectsArea />
+      <StatsRightSideBar />
     </div>
   );
 
