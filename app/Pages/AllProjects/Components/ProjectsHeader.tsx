@@ -37,9 +37,9 @@ function ProjectsHeader() {
   function AddProjectButton() {
     return (
       <div className="flex gap-3 items-center">
-        <button className="bg-blue-600 text-white px-2 pr-3 text-[14px] rounded-md flex gap-1 items-center p-2">
+        <button className="bg-blue-600 text-white px-2 pr-3 text-[14px] rounded-md flex gap-1 items-center p-2 max-sm:pr-2">
           <Add sx={{ fontSize: "22px" }} className="mt-[2px]" />
-          <span>New Project</span>
+          <span className="max-sm:hidden">New Project</span>
         </button>
         <Menu className="text-slate-400 h-9 cursor-pointer hidden max-sm:block" />
       </div>

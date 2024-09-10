@@ -3,7 +3,7 @@ import React from "react";
 
 const SingleProjectCard = () => {
   return (
-    <li className="w-[300px] max-md:w-[96%] flex flex-col gap-8 rounded-lg p-7 bg-white">
+    <li className="w-[300px] max-md:w-[96%] max-sm:w-[96%] flex flex-col gap-8 rounded-lg p-7 bg-white">
       <ProjectCardHeader />
       <ProjectCardBody />
       <ProjectCardFooter />
@@ -21,7 +21,9 @@ const SingleProjectCard = () => {
           </div>
           {/* Project Title */}
           <div className="flex flex-col">
-            <span className="font-semibold text-[19px]">Project Title</span>
+            <span className="font-semibold text-[19px] max-sm:text-[14px]">
+              Project Title
+            </span>
             <span className="text-slate-400 text-[13px]">2 days ago</span>
           </div>
           {/* Progress Bar */}

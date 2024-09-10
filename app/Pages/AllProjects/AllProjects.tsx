@@ -14,7 +14,7 @@ const AllProjects = () => {
 
   function AllProjectsArea() {
     return (
-      <div className="w-[78%] p-10 flex flex-col gap-3 border">
+      <div className="w-[78%] p-10 flex flex-col gap-3 ">
         {/* Search bar and Add project Button */}
         <ProjectsHeader />
         {/* My Projects Title and the add button */}

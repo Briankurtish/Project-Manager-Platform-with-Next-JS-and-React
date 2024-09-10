@@ -7,7 +7,7 @@ export default function Home() {
     <div className="flex w-full h-screen poppins">
       <SideBar />
 
-      <AllProjects />
+      <AllTasksContainer />
     </div>
   );
 }
