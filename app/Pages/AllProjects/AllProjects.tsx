@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectsHeader from "./Components/ProjectsHeader";
 import ProjectsSubHeader from "./Components/ProjectsSubHeader";
+import AllProjectsSection from "./Components/AllProjectsSection";
 
 const AllProjects = () => {
   return (
@@ -16,6 +17,7 @@ const AllProjects = () => {
         <ProjectsHeader />
         {/* My Projects Title and the add button */}
         <ProjectsSubHeader />
+        <AllProjectsSection />
       </div>
     );
   }
