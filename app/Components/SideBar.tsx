@@ -11,7 +11,7 @@ const SideBar = () => {
 
   //   Profile Image
   function Profile() {
-    return <div className="w-7 h-7 bg-green-600 rounded-md"></div>;
+    return <div className="w-7 h-7 bg-blue-600 rounded-md"></div>;
   }
 
   //   Menu
@@ -20,7 +20,7 @@ const SideBar = () => {
       <div className="flex flex-col gap-6 items-center">
         <BorderAll
           sx={{ fontSize: "25px" }}
-          className="text-green-600 cursor-pointer"
+          className="text-blue-600 cursor-pointer"
         />
 
         <Splitscreen
@@ -41,7 +41,7 @@ const SideBar = () => {
     return (
       <div className="flex items-center justify-center">
         <TaskAlt
-          className="text-green-600 font-bold"
+          className="text-blue-600 font-bold"
           sx={{ fontsize: "41px" }}
         />
       </div>
