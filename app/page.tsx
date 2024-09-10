@@ -1,4 +1,5 @@
 import SideBar from "./Components/SideBar";
+import AllProjects from "./Pages/AllProjects/AllProjects";
 import AllTasksContainer from "./Pages/AllTasks/AllTasks";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
     <div className="flex w-full h-screen poppins">
       <SideBar />
 
-      <AllTasksContainer />
+      <AllProjects />
     </div>
   );
 }
