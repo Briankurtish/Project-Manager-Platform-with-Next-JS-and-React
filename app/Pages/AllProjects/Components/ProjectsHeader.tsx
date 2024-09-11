@@ -41,7 +41,7 @@ function ProjectsHeader() {
           <Add sx={{ fontSize: "22px" }} className="mt-[2px]" />
           <span className="max-sm:hidden">New Project</span>
         </button>
-        <Menu className="text-slate-400 h-9 cursor-pointer hidden max-sm:block" />
+        <Menu className="text-slate-400 h-9 cursor-pointer hidden max-[940px]:block" />
       </div>
     );
   }

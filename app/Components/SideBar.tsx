@@ -2,7 +2,7 @@ import { BorderAll, Logout, Splitscreen, TaskAlt } from "@mui/icons-material";
 
 const SideBar = () => {
   return (
-    <div className="w-[90px] h-screen py-10 bg-white flex flex-col items-center justify-between  max-sm:hidden">
+    <div className="w-[90px] h-screen py-10 bg-white flex flex-col items-center justify-between  max-[940px]:hidden">
       <Logo />
       <Menu />
       <Profile />

@@ -10,7 +10,7 @@ import React from "react";
 
 const TasksList = () => {
   return (
-    <div className="ml-12 mt-11 flex-col flex gap-4">
+    <div className="ml-12 max-sm:ml-0 mt-11 flex-col flex gap-4">
       <Tabs />
       <div className="flex flex-col gap-4">
         <SingleTask />
@@ -27,11 +27,15 @@ function Tabs() {
     <div className="flex items-center gap-6 ml-3 mt-8 mb-5">
       <div className="flex gap-2 text-blue-400 font-semibold">
         <span>On Going Tasks</span>
-        <span className="bg-blue-600 text-white px-2 rounded-md">7</span>
+        <span className="bg-blue-600 text-white px-2 rounded-md max-[420px]:hidden">
+          7
+        </span>
       </div>
       <div className="text-slate-400 flex gap-2 items-center">
         <span>Completed Tasks</span>
-        <span className="bg-slate-200 text-white px-2 rounded-md">8</span>
+        <span className="bg-slate-200 text-white px-2 rounded-md max-[420px]:hidden">
+          8
+        </span>
       </div>
     </div>
   );
@@ -41,7 +45,7 @@ function SingleTask() {
   return (
     <div className="flex gap-2 items-center">
       <CheckBox />
-      <div className="w-full bg-white rounded-lg border border-slate-100 flex gap-3 items-center justify-between p-5 py-6">
+      <div className="w-full bg-white rounded-lg border border-slate-100 flex gap-3 items-center justify-between p-5 py-6 max-sm:p-4">
         <div className="flex gap-3 items-center">
           {/* Wallet Icon */}
           <div>
@@ -65,13 +69,13 @@ function SingleTask() {
 
         {/* Status */}
         <div className="flex gap-36 font-bold item-center">
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center max-[770px]:hidden">
             <Cached className="text-[24px] text-slate-400" />
             <span className="text-[14px] text-slate-400">In Progress</span>
           </div>
 
           {/* Priority */}
-          <div className="flex gap-2 items-center">
+          <div className="flex gap-2 items-center max-[940px]:hidden ">
             <Circle className="text-[10px] text-green-600" />
             <span className="text-[14px] text-slate-400">Low</span>
           </div>

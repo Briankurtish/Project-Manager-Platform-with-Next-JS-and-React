@@ -1,4 +1,4 @@
-import { Add, Search } from "@mui/icons-material";
+import { Add, Menu, Search } from "@mui/icons-material";
 import React from "react";
 
 function TasksHeader() {
@@ -23,7 +23,7 @@ function TasksHeader() {
         </div>
 
         {/* Search Input */}
-        <div className="border-b-2 border-slate-200">
+        <div className="border-b-2 w-[67%] border-slate-200">
           <input
             placeholder="Search a Task..."
             className="p-2 bg-transparent text-[14px] outline-none"
@@ -36,10 +36,13 @@ function TasksHeader() {
   //   Add Button
   function AddPTaskButton() {
     return (
-      <button className="bg-blue-600 text-white px-2 pr-3 text-[14px] rounded-md flex gap-1 items-center">
-        <Add sx={{ fontSize: "22px" }} className="mt-[2px]" />
-        <span>New Task</span>
-      </button>
+      <div className="flex gap-3 items-center">
+        <button className="bg-blue-600 text-white p-2 text-[14px] rounded-md flex gap-1 items-center max-sm:pr-2">
+          <Add sx={{ fontSize: "22px" }} className="mt-[2px]" />
+          <span className="max-sm:hidden pr-2">New Task</span>
+        </button>
+        <Menu className="text-slate-400 h-9 cursor-pointer hidden max-[940px]:block" />
+      </div>
     );
   }
 }
